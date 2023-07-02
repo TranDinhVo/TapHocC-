@@ -211,6 +211,40 @@ int main()
 
 
 BAI 7
+   #include <iostream>
+using namespace std;
+
+int main()
+{
+   int arr[10][10], n,m;
+   cout << "n = ";
+   cin >> n;
+   cout << "m = ";
+   cin >> m;
+
+  cout << "Nhap mang "<< endl;
+  for (int i = 0 ; i < n; i++)
+    { 
+      for (int j = 0 ; j < m; j++)
+        {
+          cin >> arr[i][j];
+        }
+    }
+   int s = 0;
+  for (int i = 0 ; i < n; i++)
+    { 
+      for (int j = 0 ; j < m; j++)
+        {
+          if ( i == 0 || j == 0 || i == n -1 || j == m - 1)
+          {
+            s += arr[i][j];
+          }
+        }
+     
+    }
+cout << s;
+    return 0;
+}    
     
    
    
